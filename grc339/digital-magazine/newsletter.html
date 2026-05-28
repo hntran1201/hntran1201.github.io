@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/val0dwe.css" />
+    <title>Newsletter</title>
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <a href="index.html"><img src="MedilaoLogo.svg" alt="Medilao" /></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="mainstory.html">Guides</a></li>
+            <li><a href="photogallery.html">Food</a></li>
+            <li><a href="#">Style</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Nature</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="newsletter.html" class="active">Newsletter</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="newsletter">
+        <form>
+          <h2>Subscribe to our Newsletter!</h2>
+          <p>Never miss out on an update from Medilao again.</p>
+          <fieldset>
+            <legend>Your information</legend>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="nameInput"
+                placeholder="Your Name"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="email"
+                id="emailInput"
+                placeholder="Your Email"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Select the topics you'd like to see</legend>
+            <div>
+              <input type="checkbox" name="food" id="food" />
+              <label for="food">Food</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="style" id="style" />
+              <label for="style">Style</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="culture" id="culture" />
+              <label for="culture">Culture</label>
+            </div>
+            <div>
+              <input type="checkbox" name="nature" id="nature" />
+              <label for="nature">Nature</label>
+            </div>
+          </fieldset>
+          <button type="submit">Subscribe</button>
+        </form>
+        <figure>
+          <img
+            src="newsletter.jpg"
+            alt="Winding mountain road cutting through the green hills of northern Taiwan under a bright blue sky."
+          />
+        </figure>
+      </main>
+      <footer>All rights reserved.</footer>
+    </div>
+  </body>
+</html>
