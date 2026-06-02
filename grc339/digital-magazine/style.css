@@ -7,7 +7,7 @@
     font: inherit;
 }
  body {
-     font-family: "DM Sans", sans-serif;
+     font-family: "dm-sans", sans-serif;
      background-color: rgb(247, 241, 232);
 }
  img {
@@ -19,15 +19,14 @@
      margin: auto;
 }
  h1 {
-    /*minimum size, scales with screen width, maximum size*/
-     width: clamp(10em, 25vw, 16em);
+     width: 10em;
      margin-top: 1em;
 }
  h1, nav {
      margin-bottom: 1em;
 }
  h2 {
-     font-family: "Playfair Display", serif;
+     font-family: " playfair-display", serif;
      font-weight: bold;
      color: rgb(30, 74, 51);
 }
@@ -63,9 +62,9 @@
      object-fit: cover;
 }
  section.thirdstory h2 {
-     border-top: 1px solid rgb(184, 134, 11);
+     border-top: 1px solid rgb(183, 170, 151);
      padding-top: 0.5em;
-     color: rgb(59, 122, 87);
+     color: rgb(74, 163, 112);
 }
  p {
      color: rgb(26, 23, 20);
@@ -88,19 +87,16 @@
 }
  nav ul li a {
      font-size: 1.1rem;
-     color: rgb(30, 74, 51);
+     color: rgb(196, 98, 45);
      font-weight: bold;
 }
- nav ul li a:hover {
-     color: rgb(196, 98, 45);
-     border-bottom: 2px solid rgb(196, 98, 45);
+ nav ul li a:hover,
+ nav ul li a.active  {
+     color: rgb(141, 67, 27);
+     border-bottom: 2px solid rgb(141, 67, 27);
      padding-bottom: 0.2em;
 }
- nav ul li a.active {
-     color: rgb(196, 98, 45);
-     border-bottom: 2px solid rgb(196, 98, 45);
-     padding-bottom: 0.2em;
-}
+
  aside {
      background-color: rgb(236, 232, 223);
      padding: 1em .5em;
@@ -122,7 +118,7 @@
      justify-content: space-between;
      align-items: center;
      gap: 2em;
-     border-bottom: 2px solid rgb(30, 74, 51);
+     border-bottom: 2px solid rgb(183, 170, 151);
      padding-bottom: 0.75em;
 }
 /*photogallery css*/
@@ -188,7 +184,7 @@
      color: rgb(30, 74, 51);
      font-size: 1.5em;
      margin-bottom: 0.75em;
-     font-family: "Playfair Display", serif;
+     font-family: "playfair-display", serif;
      font-weight: bold;
 }
  fieldset {
@@ -208,6 +204,7 @@
      border: none;
      font-size: 1em;
      color: rgb(31,31,31);
+     border: 0.5px solid rgb(206, 206, 206);
 }
  input[type="checkbox"] {
      accent-color: rgb(30, 74, 51);
@@ -217,7 +214,7 @@
      padding: 0.85em;
      background-color: rgb(184, 134, 11);
      border: none;
-     color: rgb(255,255,255);
+     color: rgb(245, 232, 200);
      text-transform: uppercase;
 }
  button:hover {
@@ -335,6 +332,96 @@
     }
      main.photogallery {
          grid-column: 1/3;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(26, 23, 18);
+    }
+
+    h1 {  
+        background-image: url("MedilaoLogo-dark.svg");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+    } 
+
+    h1 img {  
+        opacity: 0;  
+    }
+
+    h2 {
+        color: rgb(74, 163, 112);
+    }
+
+    section.secondarystory h2 {
+        color: rgb(200, 169, 110);
+     }
+
+    section.thirdstory h2 {
+        border-top: 1px solid rgb(58, 53, 48);
+        color: rgb(40, 107, 68);
+    }
+
+    p {
+        color: rgb(232, 224, 208);
+    }
+
+    label {
+        color: rgb(232, 224, 208);
+    }
+
+    figcaption {
+        color: rgb(122, 114, 104);
+    }
+
+    a {
+        color: rgb(232, 224, 208);
+    }
+
+    nav ul li a {
+        color: rgb(200, 169, 110);
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: rgb(232, 224, 208);
+        border-bottom: 2px solid rgb(232, 224, 208);
+    }
+
+    aside {
+        background-color: rgb(31, 28, 24);
+    }
+
+    footer {
+        background: rgb(74, 163, 112);
+        color: rgb(26, 23, 18);
+    }
+
+    header {
+        border-bottom: 2px solid rgb(58, 53, 48);
+    }
+
+    main.newsletter form {
+        background-color: rgb(31, 28, 24);
+    }
+
+    main.newsletter legend {
+        color: rgb(74, 163, 112);
+    }
+
+    main.newsletter p {
+        color: rgb(122, 114, 104);
+    }
+
+    input[type="text"] {
+        background-color: rgb(42, 38, 32);
+        color: rgb(232, 224, 208);
+        border: 0.5px solid rgb(61, 56, 48);
+    }
+
+    input[type="checkbox"] {
+        accent-color: rgb(74, 163, 112);
     }
 }
  
