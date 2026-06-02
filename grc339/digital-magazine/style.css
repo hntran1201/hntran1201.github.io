@@ -250,7 +250,7 @@
          grid-gap: 1em;
         /* makes container fill full screen height */
          min-height: 100vh;
-         grid-template-rows: auto 1fr auto;
+         grid-template-rows: auto auto auto;
     }
      header, footer {
          grid-column: 1/3;
